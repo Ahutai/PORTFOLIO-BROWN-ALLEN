@@ -1,0 +1,322 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+p {
+  padding-bottom: 1rem;
+  color: white;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: #eee;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row nowrap;
+  list-style: none;
+}
+
+header ul li {
+  transition: all 0.2s;
+}
+
+header ul li:hover {
+  transform: scale(1.1);
+}
+
+header ul li a:hover {
+  color: #3ab0ff;
+}
+
+header ul li a {
+  color: #222;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.2s;
+  color: white;
+}
+
+.active {
+  color: #3ab0ff;
+}
+
+.vp {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vp-content {
+  max-width: 850px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vp-content h1 {
+  text-shadow: 0px 0px 8px #222;
+  font-size: 45px;
+  transition: all 1s;
+}
+
+.vp-content h1:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 0px 3.5px #222;
+  .str {
+    color: #3ab0ff;
+  }
+}
+
+.vp-content p {
+  transition: all 1s;
+  text-shadow: 0px 0px 8px #222;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+.vp-content p:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 0px 3.5px #222;
+  .strng {
+    color: #3ab0ff;
+  }
+}
+
+.strng {
+  font-weight: 300;
+  transition: all 1s;
+}
+
+.str {
+  font-weight: 500;
+  text-decoration: overline;
+  transition: all 1s;
+}
+
+.sepa {
+  background: #3ab0ff;
+  height: 3px;
+  width: 150px;
+  margin-top: 18px;
+  margin-bottom: 40px;
+  transition: all 1s;
+}
+
+.strongs {
+  font-weight: 300;
+  color: #3ab0ff;
+}
+
+footer {
+  height: 100px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pa {
+  text-align: center;
+}
+
+.ul-ul {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-ul li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.href {
+  margin-left: 5px;
+}
+
+.hrefs {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.hrefss {
+  text-decoration: none;
+  list-style: none;
+}
+
+.hrefs a {
+  transition: all 250ms;
+}
+
+.hrefs a:hover {
+  color: #3ab0ff;
+}
+
+.href {
+  transition: all 250ms;
+}
+
+.href:hover {
+  color: #3ab0ff;
+}
+
+.point {
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
+.li-c i {
+  color: white;
+}
+
+.li-12 a {
+  padding-right: 50px;
+  font-size: 50px;
+}
+
+.li-12 a i {
+  transition: all 250ms;
+}
+
+.li-12 a i:hover {
+  filter: brightness(70%);
+  .strongsss {
+    color: #3ab0ff;
+  }
+}
+
+.ul-uls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.li-1234 {
+  padding-left: 50px;
+  list-style: none;
+  font-size: 40px;
+}
+
+.li-1234 a i {
+  transition: all 250ms;
+}
+
+.li-1234 a i:hover {
+  filter: brightness(70%);
+}
+
+.vp-containers {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: fixed url(./img/Accueil.svg) center center;
+  background-size: cover;
+  box-shadow: inset 0px -18px 20px black;
+}
+
+.veille {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.veille ul {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+}
+
+.li-321 img {
+  width: 350px;
+  height: 234px;
+}
+
+.li-321 {
+  list-style: none;
+  width: 350px;
+}
+
+.li-321 a {
+  text-decoration: none;
+}
+
+.li-323 a {
+  text-decoration: none;
+}
+
+.li-323 {
+  list-style: none;
+}
+
+.li-323 img {
+  width: 350px;
+  height: 234px;
+}
+
+.li-234 {
+  line-height: 22.5px;
+  max-width: 350px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.h3-543 {
+  text-align: center;
+}
+
+.li-321 {
+  box-shadow: 0px 0px 20px black;
+  background: black;
+  margin: 0px 10px;
+  transition: all 500ms;
+}
+
+.li-323 {
+  box-shadow: 0px 0px 20px black;
+  background: black;
+  margin: 0px 10px;
+  transition: all 500ms;
+}
+
+.li-321:hover {
+  transform: scale(0.95);
+  filter: brightness(70%);
+}
+
+.li-323:hover {
+  filter: brightness(70%);
+  transform: scale(0.95);
+}
