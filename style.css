@@ -163,12 +163,13 @@ header ul li a {
 }
 
 .p {
-  max-width: 750px;
+  max-width: 765px;
   padding-right: 100px;
   margin-bottom: 40px;
 }
 
 .p p {
+  text-align: justify;
   letter-spacing: 1px;
   line-height: 1.8rem;
   margin-top: 50px;
@@ -387,6 +388,7 @@ header ul li a {
 }
 
 .who-text {
+  width: 550px;
   padding-left: 20px;
 }
 
@@ -406,6 +408,7 @@ header ul li a {
 }
 
 .who-text p {
+  text-align: justify;
   letter-spacing: 1px;
   line-height: 1.8rem;
 }

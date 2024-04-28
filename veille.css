@@ -260,13 +260,8 @@ footer {
 }
 
 .li-321 img {
-  width: 350px;
-  height: 234px;
-}
-
-.li-321 {
-  list-style: none;
-  width: 350px;
+  width: 330px;
+  height: 220px;
 }
 
 .li-321 a {
@@ -282,22 +277,27 @@ footer {
 }
 
 .li-323 img {
-  width: 350px;
-  height: 234px;
+  width: 330px;
+  height: 220px;
 }
 
 .li-234 {
+  transition: all 500ms;
+  text-align: justify;
   line-height: 22.5px;
   max-width: 350px;
   padding: 0px 10px;
-  text-align: center;
 }
 
 .h3-543 {
+  transition: all 500ms;
+  margin-top: 15px;
   text-align: center;
 }
 
 .li-321 {
+  list-style: none;
+  width: 330px;
   box-shadow: 0px 0px 20px black;
   background: black;
   margin: 0px 10px;
@@ -305,18 +305,73 @@ footer {
 }
 
 .li-323 {
+  width: 330px;
   box-shadow: 0px 0px 20px black;
   background: black;
   margin: 0px 10px;
   transition: all 500ms;
 }
 
+.imgsa {
+  transition: all 500ms;
+}
+
 .li-321:hover {
   transform: scale(0.95);
-  filter: brightness(70%);
+  .imgsa {
+    filter: brightness(70%) blur(1px);
+  }
+  .h3-543,
+  .li-234 {
+    filter: brightness(70%);
+  }
 }
 
 .li-323:hover {
-  filter: brightness(70%);
   transform: scale(0.95);
+  .imgsa {
+    filter: brightness(70%) blur(1px);
+  }
+  .h3-543,
+  .li-234 {
+    filter: brightness(70%);
+  }
+}
+
+.li-321[data-description] {
+  text-align: center;
+  position: relative;
+}
+
+.li-321[data-description]:hover::after {
+  content: attr(data-description);
+  position: absolute;
+  left: 80px;
+  top: 75px;
+  max-width: 140px;
+  border-bottom-right-radius: 10px;
+  padding: 12px;
+  line-height: 25px;
+  color: white;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.li-323[data-description] {
+  text-align: center;
+  position: relative;
+}
+
+.li-323[data-description]:hover::after {
+  content: attr(data-description);
+  position: absolute;
+  left: 80px;
+  top: 75px;
+  max-width: 140px;
+  border-bottom-right-radius: 10px;
+  padding: 12px;
+  line-height: 25px;
+  color: white;
+  font-size: 14px;
+  z-index: 1;
 }
