@@ -81,6 +81,18 @@ header ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .vp-content h1 {
@@ -179,7 +191,20 @@ header ul li a {
   color: #3ab0ff;
 }
 
+.img h2 a {
+  text-decoration: none;
+  transition: all 500ms;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.img h2 a:hover {
+  color: #3ab0ff;
+}
+
 .img h2 {
+  text-decoration: none;
   transition: all 500ms;
   font-size: 28px;
   font-weight: 600;
@@ -405,6 +430,18 @@ header ul li a {
 
 .who-text h2 {
   font-size: 40px;
+  animation-name: FadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .who-text p {
@@ -570,4 +607,32 @@ footer {
 .point {
   padding-top: 5px;
   margin-top: 10px;
+}
+
+.AZSQ {
+  animation-name: FAdeIn;
+  animation-duration: 2s;
+  animation-delay: 5s;
+}
+
+@keyframes FAdeIn {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+  70% {
+    transform: translateY(0px) rotate(10deg);
+  }
+  90% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
 }
